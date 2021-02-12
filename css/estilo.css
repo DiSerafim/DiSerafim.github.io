@@ -1,0 +1,27 @@
+body{
+    background-color: #ccc;
+    padding: 5px;
+}
+.principal{
+    background-color: #245;
+    padding: 10px;
+    min-height: auto;
+    text-align: center;
+}
+.portfolio{
+    color: #fff;
+    font-family: monospace;
+    font-size: 10px;
+    padding: 10px;
+}
+.descricao{
+    background-color: #272822;
+    border-color: #000;
+    width: 50%;
+    text-align: center;
+    min-height: 500px;
+    margin-bottom: 5%;
+    margin-left: 25%;
+    border-radius: 20px;
+    padding: 10px;
+}
