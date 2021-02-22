@@ -1,27 +1,161 @@
+npm i bootstrap-icons
+/*body*/
 body{
-    background-color: #ccc;
+    background-color: #f2f2f1;
     padding: 5px;
 }
+
+/*div principal*/
 .principal{
     background-color: #245;
     padding: 10px;
     min-height: auto;
     text-align: center;
 }
+
+/*portfolio*/
 .portfolio{
     color: #fff;
     font-family: monospace;
     font-size: 10px;
     padding: 10px;
 }
+
+/*menu*/
+.principal .menu{
+    background-color: rgb(35, 76, 99);
+    width: 150px;
+    height: 100%;
+    position: fixed;
+    z-index: 10;
+    border-right: 1px solid #e8dfec;
+    left: 0;
+    top: 0;
+}
+.principal .menu ul{
+    float: left;
+    margin: 90px 0;
+    padding: 0;
+}
+.principal .menu li{
+    display: block;
+    list-style: none;
+    text-align: left;
+    padding: 7px;
+    background-color: rgb(38, 77, 97);
+    margin: 5px;
+    border-bottom: 1px solid #9bc6ee;
+}
+.principal .menu li a{
+    text-decoration: none;
+    color: #f2f2f1;
+    box-sizing: border-box;
+}
+.principal .menu li a:hover {
+    color: #f6c405;
+    margin-left: 5px;
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+/*descrição*/
 .descricao{
     background-color: #272822;
-    border-color: #000;
-    width: 50%;
+    border: 2px solid #121210;
+    width: 60%;
     text-align: center;
     min-height: 500px;
-    margin-bottom: 5%;
-    margin-left: 25%;
+    margin: 10px auto 80px;
     border-radius: 20px;
     padding: 10px;
+}
+
+/*perfil-logo*/
+.descricao .logo img{
+    width: 150px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-top: 20px;
+    margin-bottom: 0;
+    border: solid 7px rgb(214, 224, 245);
+    box-shadow: 0 0 20px rgb(48 46 77 / 15%);
+}
+.descricao .logo h1{
+    color: rgb(214, 224, 245);
+    font-size: 30px;
+    font-family: 'Rubik', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 700;
+}
+.descricao .logo h2{
+    font-size: 20px;
+    font-weight: 500;
+    color: #272;
+    line-height: 20px;
+    font-family: monospace, Verdana, Geneva, Tahoma, sans-serif;
+}
+.descricao .logo h2 strong{
+    font-style: italic;
+}
+.descricao .logo a{
+	text-decoration: none;
+	display: inline-block;
+    position: relative;
+    min-width: 65%;
+}
+.descricao .logo a::before{
+	content: '';
+	height: 20px;
+	width: 20px;
+	position: absolute;
+	border-top: 3px solid rgb(4, 107, 158);
+	border-left: 3px solid rgb(4, 107, 158);
+	top: 0;
+	left: 0;
+}
+.descricao .logo a::after{
+	content: '';
+	height: 20px;
+	width: 20px;
+	position: absolute;
+	border-right: 3px solid rgb(4, 107, 158);
+	border-bottom: 3px solid rgb(4, 107, 158);
+	bottom: 0;
+	right: 0;
+}
+
+/*Redes sociais links*/
+.descricao .links{
+    padding: 10px;
+    margin-top: 50px;
+}
+.descricao .links a{
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+    text-align: center;
+    margin: 0 5px;
+    background-color: #f6c405;
+    padding: 5px;
+    color: black;
+    text-decoration: none;
+    border-radius: 50px;
+}
+.descricao .links a:hover{
+    height: 30px;
+    width: 30px;
+    background-color: #0078db;
+    border: 1px solid #a89b64;
+    color: #fff;
+}
+
+/*rodape*/
+.rodape{
+    background-color: black;
+    color: rgb(214, 224, 245);
+    width: auto;
+    padding: 5%;
+}
+.rodape span{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 12px;
 }
