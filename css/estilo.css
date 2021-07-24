@@ -13,14 +13,6 @@ body{
     text-align: center;
 }
 
-/*portfolio*/
-.portfolio{
-    color: #fff;
-    font-family: monospace;
-    font-size: 10px;
-    padding: 10px;
-}
-
 /*menu*/
 .principal .menu{
     background-color: rgb(35, 76, 99);
@@ -46,10 +38,14 @@ body{
     margin: 5px;
     border-bottom: 1px solid #9bc6ee;
 }
+.principal .menu li i{
+    color: #9bc6ee;
+}
 .principal .menu li a{
     text-decoration: none;
     color: #f2f2f1;
     box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
 }
 .principal .menu li a:hover {
     color: #f6c405;
@@ -57,15 +53,37 @@ body{
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
 }
+/*rodape*/
+.rodape{
+    color: rgb(214, 224, 245);
+}
+.rodape span{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 12px;
+}
 
 /*descrição*/
+.inicio{
+    background-color: #272;
+    min-height: 100vh;
+    padding: 0 30px;
+    margin-left: 150px;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+.portfolio{
+    color: #fff;
+    font-family: monospace;
+    font-size: 10px;
+    padding: 30px 0;
+}
 .descricao{
     background-color: #272822;
     border: 2px solid #121210;
-    width: 60%;
+    width: 50%;
     text-align: center;
     min-height: 500px;
-    margin: 10px auto 80px;
+    margin: 20px auto 100px;
     border-radius: 20px;
     padding: 10px;
 }
@@ -77,6 +95,7 @@ body{
     display: inline-block;
     margin-top: 20px;
     margin-bottom: 0;
+    margin-top: 40px;
     border: solid 7px rgb(214, 224, 245);
     box-shadow: 0 0 20px rgb(48 46 77 / 15%);
 }
@@ -84,7 +103,7 @@ body{
     color: rgb(214, 224, 245);
     font-size: 30px;
     font-family: 'Rubik', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-weight: 700;
+    font-weight: 600;
 }
 .descricao .logo h2{
     font-size: 20px;
@@ -146,16 +165,4 @@ body{
     background-color: #0078db;
     border: 1px solid #a89b64;
     color: #fff;
-}
-
-/*rodape*/
-.rodape{
-    background-color: black;
-    color: rgb(214, 224, 245);
-    width: auto;
-    padding: 5%;
-}
-.rodape span{
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 12px;
 }
