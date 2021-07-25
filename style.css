@@ -1,0 +1,102 @@
+/* Font awesome Bootstrap grátis */
+@import url("https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Rubik:500,700,900&display=swap");
+/* CSS Geral */
+body {
+  margin: 0;
+  line-height: 1.5;
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+::before,::after {
+  box-sizing: border-box;
+}
+
+/* Css menu principal */
+.menu-lateral {
+  width: 270px;
+  background-color: #ededed;
+  position: fixed;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: 10;
+  border-right: 1px solid rgb(250, 230, 230);
+  padding: 30px;
+}
+/* Logo */
+.menu-lateral .logo {
+  padding: 10px 0;
+}
+
+.menu-lateral .logo a {
+  font-size: 45px;
+  color: #302e4d;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+  padding: 0 10px 5px 10px;
+  line-height: 60px;
+}
+
+.menu-lateral .logo a::before {
+  content: '';
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.menu-lateral .logo a::after {
+  content: '';
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.menu-lateral .logo p {
+  font-size: 18px;
+  color: #272;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 400;
+  text-decoration: none;
+  margin-top: -16px;
+  margin-left: 5px;
+}
+/* Menu */
+.menu-lateral .menu {
+  background-color: #f9f9f9;
+  list-style: none;
+  margin: 80px 0;
+}
+/* Copyright */
+.menu-lateral .copyright {
+  background-color: #fdf9fd;
+}
+
+/* Conteúdo principal */
+.conteudo-principal {
+  padding-left: 270px;
+}
+
+/* Home */
+.secao-home {
+  background-color: #f2f2f2;
+  min-height: 100vh;
+}
