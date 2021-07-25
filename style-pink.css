@@ -1,9 +1,22 @@
+/* Logo */
 .menu-lateral a::before {
-  border-top: 4px solid #ec1839;
-  border-left: 4px solid #ec1839;
+  border-top: 4px solid #d10121;
+  border-left: 4px solid #d10121;
 }
 
 .menu-lateral a::after {
-  border-right: 4px solid #ec1839;
-  border-bottom: 4px solid #ec1839;
+  border-right: 4px solid #d10121;
+  border-bottom: 4px solid #d10121;
+}
+
+/* Menu */
+.menu-lateral .menu a:hover, .menu-lateral .menu a.active {
+  color: #d10121;
+}
+
+/* Menu Alternador */
+.menu-lateral .menu-alternador span,
+.menu-lateral .menu-alternador span::before,
+.menu-lateral .menu-alternador span::after {
+  background-color: #d10121;
 }

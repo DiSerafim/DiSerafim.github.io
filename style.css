@@ -2,101 +2,246 @@
 @import url("https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css");
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Rubik:500,700,900&display=swap");
-/* CSS Geral */
+
+/* -----------------
+ CSS Geral
+----------------- */
 body {
-  margin: 0;
-  line-height: 1.5;
-  font-size: 16px;
   font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
   font-weight: 400;
+  line-height: 1.5;
+  margin: 0;
 }
 
 * {
-  margin: 0;
-  padding: 0;
-  outline: none;
-  text-decoration: none;
   box-sizing: border-box;
+  margin: 0;
+  outline: none;
+  padding: 0;
+  text-decoration: none;
 }
 
-::before,::after {
+::before, ::after {
   box-sizing: border-box;
 }
 
 /* Css menu principal */
 .menu-lateral {
-  width: 270px;
   background-color: #ededed;
-  position: fixed;
+  border-right: 1px solid rgb(250, 230, 230);
   height: 100%;
   left: 0;
-  top: 0;
-  z-index: 10;
-  border-right: 1px solid rgb(250, 230, 230);
   padding: 30px;
+  position: fixed;
+  top: 0;
+  width: 270px;
+  z-index: 10;
 }
 /* Logo */
 .menu-lateral .logo {
-  padding: 10px 0;
+  background-color: #f2f2f2;
+  border-bottom-left-radius: 20px;
+  border-top-right-radius: 20px;
+  padding: 15px 0;
 }
 
 .menu-lateral .logo a {
-  font-size: 45px;
-  color: #302e4d;
-  font-family: 'Rubik', sans-serif;
-  font-weight: 600;
-  text-decoration: none;
+  color: #183153;
   display: inline-block;
-  position: relative;
-  padding: 0 10px 5px 10px;
+  font-family: 'Rubik', sans-serif;
+  font-size: 45px;
+  font-weight: 600;
   line-height: 60px;
+  padding: 0 10px 5px 10px;
+  position: relative;
+  text-decoration: none;
 }
 
 .menu-lateral .logo a::before {
   content: '';
   height: 20px;
-  width: 20px;
+  left: 0;
   position: absolute;
   top: 0;
-  left: 0;
+  width: 20px;
 }
 
 .menu-lateral .logo a::after {
+  bottom: 0;
   content: '';
   height: 20px;
-  width: 20px;
   position: absolute;
-  bottom: 0;
   right: 0;
+  width: 20px;
 }
 
 .menu-lateral .logo p {
-  font-size: 18px;
   color: #272;
   font-family: 'Rubik', sans-serif;
+  font-size: 18px;
   font-weight: 400;
-  text-decoration: none;
-  margin-top: -16px;
   margin-left: 5px;
+  margin-top: -16px;
+  text-decoration: none;
 }
+
+/* Menu Alternador */
+.menu-lateral .menu-alternador {
+  align-items: center;
+  background-color: #ededed;
+  border: 1px solid #d4d4e3;
+  border-radius: 5px;
+  cursor: pointer;
+  display: -ms-flexbox;
+  display: flex;
+  display: none;
+  height: 30px;
+  justify-content: center;
+  left: 290px;
+  position: fixed;
+  -ms-flex-align: center;
+  -ms-flex-pack: center;
+  top: 20px;
+  width: 35px;
+  z-index: 11;
+}
+
+.menu-lateral .menu-alternador span {
+  display: inline-block;
+  height: 2px;
+  position: relative;
+  width: 25px;
+}
+
+.menu-lateral .menu-alternador span::before {
+  content: '';
+  height: 1px;
+  left: 0;
+  position: absolute;
+  top: -6px;
+  width: 25px;
+}
+
+.menu-lateral .menu-alternador span::after {
+  bottom: -6px;
+  content: '';
+  height: 1px;
+  left: 0;
+  position: absolute;
+  width: 25px;
+}
+
 /* Menu */
 .menu-lateral .menu {
-  background-color: #f9f9f9;
+  background-color: #f2f2f2;
+  border-bottom-left-radius: 20px;
+  border-top-right-radius: 20px;
   list-style: none;
   margin: 80px 0;
+  padding: 0;
 }
+
+.menu-lateral .menu li {
+  display: block;
+}
+
+.menu-lateral .menu li a {
+  border-bottom: 1px solid #e8dfec;
+  color: #183153;
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 40px;
+  -webkit-transition: all 0.3s ease;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.menu-lateral .menu li a:not(.active):hover {
+  padding-left: 5px;
+}
+
+.menu-lateral .menu li a .fa {
+  background-color: #ededed;
+  border-radius: 50px;
+  margin-right: 5px;
+  padding: 5px;
+  width: 23px;
+}
+
 /* Copyright */
 .menu-lateral .copyright {
-  background-color: #fdf9fd;
+  background-color: #f2f2f2;
+  border-bottom-left-radius: 20px;
+  border-top-right-radius: 20px;
+  color: #7d7d7d;
+  display: block;
+  font-size: 10px;
+  padding: 10px;
+  text-align: center;
 }
 
 /* Conteúdo principal */
 .conteudo-principal {
   padding-left: 270px;
+  min-height: 100vh;
+  background-image: linear-gradient(to top, #d4d3d3, #f2f2f2);
+  padding: 1vh 15px;
+  position: relative;
+  margin: auto;
+  vertical-align: middle;
 }
 
 /* Home */
 .secao-home {
   background-color: #f2f2f2;
-  min-height: 100vh;
+  border: 1px solid #d4d3d3;
+  border-radius: 30px;
+  float: right;
+  min-height: 97vh;
+  opacity: 0.8;
+  position: relative;
+  width: 1200px;
+  min-width: 82%;
+  max-width: 87%;
+  margin: auto;
+}
+
+.conteudo {
+  background-color: red;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+.fileira {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.apresentacao {
+  background-color: #272;
+}
+
+.sobre {
+  padding: 10px 20px;
+  background-color: #d4d3d3;
+  margin-top: 10px;
+  border-radius: 30px;
+}
+
+.home-img {
+  background-color: #183153;
+}
+
+.apresentacao, .home-img {
+  width: 50%;
+  padding: 15px;
 }
