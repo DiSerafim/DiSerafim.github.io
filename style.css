@@ -1,7 +1,8 @@
 /* Font awesome Bootstrap grátis */
-@import url("https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css");
-@import url("https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Rubik:500,700,900&display=swap");
+@import url('https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Rubik:500,700,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
 
 /* -----------------
  CSS Geral
@@ -24,6 +25,20 @@ body {
 
 ::before, ::after {
   box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: #272;
+  font-weight: 400;
+}
+
+h1, h2 {
+  font-weight: 600;
+}
+
+h3, h4, h5, h6 {
+  font-weight: 500;
 }
 
 /* Css menu principal */
@@ -187,34 +202,17 @@ body {
   padding-left: 270px;
   min-height: 100vh;
   background-image: linear-gradient(to top, #d4d3d3, #f2f2f2);
-  padding: 1vh 15px;
-  position: relative;
-  margin: auto;
-  vertical-align: middle;
 }
 
 /* Home */
 .secao-home {
-  background-color: #f2f2f2;
-  border: 1px solid #d4d3d3;
-  border-radius: 30px;
-  float: right;
-  min-height: 97vh;
-  opacity: 0.8;
-  position: relative;
-  width: 1200px;
-  min-width: 82%;
-  max-width: 87%;
-  margin: auto;
+  display: flex;
+  padding: 30px 0;
 }
 
 .conteudo {
-  background-color: red;
-}
-
-img {
-  max-width: 100%;
-  vertical-align: middle;
+  padding: 0 40px;
+  width: 100%;
 }
 
 .fileira {
@@ -226,22 +224,89 @@ img {
   align-items: center;
 }
 
+/* Esconder */
+.hidden {
+  display: none !important;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+
 .apresentacao {
-  background-color: #272;
+  height: 100%;
+  justify-content: center;
 }
 
 .sobre {
-  padding: 10px 20px;
-  background-color: #d4d3d3;
-  margin-top: 10px;
-  border-radius: 30px;
+  border-bottom: 1px solid #dfdddd;
+  margin-bottom: 30px;
+  font-family: 'Poppins', sans-serif;
 }
 
-.home-img {
-  background-color: #183153;
+.sobre .hard-skills{
+  background-color: #ededed;
+  border: 1px solid #e8dfec;
+  border-radius: 30px;
+  color: #183153;
+  display: inline-block;
+  font-weight: 400;
+  line-height: 1.5;
+  padding: 7px 15px;
+  font-family: inherit;
+}
+
+.sobre h1 {
+  color: #183153;
+  font-size: 45px;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+.sobre h2 {
+  font-size: 20px;
+  text-transform: capitalize;
+  color: #183153;
+  font-weight: 300;
+  margin: -5px 0 20px;
+}
+
+.sobre a {
+  font-size: 18px;
 }
 
 .apresentacao, .home-img {
   width: 50%;
   padding: 15px;
+}
+
+.home-img .img-box {
+  max-width: 350px;
+  border-radius: 50%;
+  border: 8px solid #272;
+  margin: auto;
+}
+
+.home-img .img-box img {
+  width: 100%;
+  border-radius: 50%;
+  border: 3px solid #f2f2f2;
+}
+
+/* Aprendizados */
+
+.secao-paddin {
+  padding: 40px 0;
+}
+
+/* Secao Título */
+.secao-titulo {
+  padding: 0 15px;
+  width: 100%;
+}
+
+.secao-titulo h2 {
+  font-size: 30px;
+  text-transform: capitalize;
 }
