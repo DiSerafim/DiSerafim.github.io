@@ -20,3 +20,12 @@
 .menu-lateral .menu-alternador span::after {
   background-color: #d10121;
 }
+
+/* Home */
+.sobre h2 {
+  font-size: 20px;
+  text-transform: capitalize;
+  color: #d10121;
+  font-weight: 300;
+  margin: -5px 0 20px;
+}

@@ -12,6 +12,9 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik:500,700,900&display=swap">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="style-pink.css">
+  <!-- <link rel="stylesheet" href="font-awesome.css"> -->
+  <!-- scripts -->
+  <script src="js/scripts.js"></script>
 </head>
 <body>
   <!-- main principal -->
@@ -72,9 +75,9 @@
                 <p class="hard-skills">Testes Unitários</p>
                 <p class="hard-skills">JS ES6</p>
                 <p class="hard-skills">React</p>
+                <p class="hard-skills">React hooks</p>
                 <p class="hard-skills">Redux com react</p>
                 <p class="hard-skills">Context api</p>
-                <p class="hard-skills">React hooks</p>
                 <p class="hard-skills">Router</p>
               </div>
             </div>
@@ -89,12 +92,94 @@
       <!-- Home PRINCIPAL fim -->
 
       <!-- Aprendizados -->
-      <section class="secao-aprendizados secao-paddin">
+      <section class="secao-aprendizados">
         <div class="conteudo">
-          <div class="fileira">
+          <div class="fileira secao-paddin">
             <div class="secao-titulo">
               <h2>Aprendizados</h2>
             </div>
+          </div>
+          <div class="fileira">
+            <!-- Módulo Fundamentos -->
+            <div class="aprendizados-modulos">
+              <div class="aprendizados-miniaturas">
+                <img src="img/fundamentos.svg" alt="fundamentos">
+              </div>
+              <h3 class="aprendizados-titulo">Fundamentos do Desenvolvimento Web</h3>
+              <button type="button" class="btn btn-detalhes">Saber mais...</button>
+              <div class="aprendizados-detalhes">
+                <div class="detalhes">
+                  <p>Aplicando de forma prática conteúdos como: Unix & Bash, Git, Github, JS Básico & DOM, HTML, CSS, JS ES6, Higher Order Functions e Testes Unitários, assim como metodologias ágeis e habilidades comportamentais.</p>
+                </div>
+                <div class="informacoes-gerais">
+                  <ul>
+                    <li>Concluido em - <span>3 de maio de 2021</span></li>
+                    <li>Credencial Online - <span><a href="https://www.credential.net/c30855bc-6ad7-421d-b7af-bdff1ef690ab" target="_blank" rel="noopener noreferrer">Certificado</a></span></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!-- Módulo Fundamentos Fim -->
+            <!-- Módulo Front-End -->
+            <div class="aprendizados-modulos">
+              <div class="aprendizados-miniaturas">
+                <img src="img/front-end.svg" alt="front-end">
+              </div>
+              <h3 class="aprendizados-titulo">Desenvolvimento Front-end</h3>
+              <button type="button" class="btn btn-detalhes">Saber mais...</button>
+              <div class="aprendizados-detalhes">
+                <div class="detalhes">
+                  <p>React, incluindo Componentes, Estado e Eventos, Componentes Controlados, Ciclo de Vida, Router, Testes com RTL, Redux com React, Context API, React Hooks, metodologias ágeis e habilidades comportamentais.</p>
+                </div>
+                <div class="informacoes-gerais">
+                  <ul>
+                    <li>Concluido em - <span>19 de julho de 2021</span></li>
+                    <li>Credencial Online - <span><a href="https://www.credential.net/856d64cc-dddc-488b-acd7-8256d4d47f02" target="_blank" rel="noopener noreferrer">Certificado</a></span></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!-- Módulo Front-End Fim -->
+            <!-- Módulo Back-End -->
+            <div class="aprendizados-modulos">
+              <div class="aprendizados-miniaturas">
+                <img src="img/back-end.svg" alt="back-end">
+              </div>
+              <h3 class="aprendizados-titulo">Desenvolvimento Back-end</h3>
+              <button type="button" class="btn btn-detalhes">Saber mais...</button>
+              <div class="aprendizados-detalhes">
+                <div class="detalhes">
+                  <p>Banco de Dados SQL, NoSQL, Node e Express.js, MVC, API, REST, JWT e File Upload, SOLID, ORM, Sockets, deploy com Heroku, metodologias ágeis e habilidades comportamentais.</p>
+                </div>
+                <div class="informacoes-gerais">
+                  <ul>
+                    <li>Concluido em - <span>Em andamento!</span></li>
+                    <li>Credencial Online - <span><a href="#" target="_blank" rel="noopener noreferrer">Breve...</a></span></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!-- Módulo Back-End Fim -->
+            <!-- Módulo Ciência da Computação -->
+            <div class="aprendizados-modulos">
+              <div class="aprendizados-miniaturas">
+                <img src="img/computer-science.svg" alt="ciencia-da-computacao">
+              </div>
+              <h3 class="aprendizados-titulo">Ciência da Computação</h3>
+              <button type="button" class="btn btn-detalhes">Saber mais...</button>
+              <div class="aprendizados-detalhes">
+                <div class="detalhes">
+                  <p>Python e OOP, Algoritmos e Complexidade, Estrutura de Dados e Resolução de Problemas, metodologias ágeis e habilidades comportamentais.</p>
+                </div>
+                <div class="informacoes-gerais">
+                  <ul>
+                    <li>Concluido em - <span>Breve...</span></li>
+                    <li>Credencial Online - <span><a href="#" target="_blank" rel="noopener noreferrer">Breve...</a></span></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!-- Módulo Ciência da Computação Fim -->
           </div>
         </div>
       </section>
@@ -103,5 +188,23 @@
     <!-- Conteúdo principal fim -->
   </main>
   <!-- main principal fim -->
+
+  <!-- Aprendizado Popup -->
+  <div class="aprendizados-popup">
+    <div class="pp-interno">
+      <div class="pp-conteudo">
+        <div class="pp-header">
+          <button type="button" class="btn pp-close"><i class="fa fa-times"></i></button>
+          <div class="pp-miniaturas">
+            <img src="img/fundamentos.svg" alt="pp-fundamentos-miniaturas">
+          </div>
+          <h3></h3>
+        </div>
+        <div class="pp-body">
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Aprendizado Popup Fim -->
 </body>
 </html>

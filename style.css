@@ -15,6 +15,10 @@ body {
   margin: 0;
 }
 
+body.esconder.scrolling {
+  overflow-y: hidden;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -39,6 +43,18 @@ h1, h2 {
 
 h3, h4, h5, h6 {
   font-weight: 500;
+}
+
+ul {
+  list-style: none;
+}
+
+.principal {
+  transition: all 0.5s ease-in-out;
+}
+
+.principal.fade-out {
+  opacity: 0;
 }
 
 /* Css menu principal */
@@ -255,6 +271,7 @@ img {
   line-height: 1.5;
   padding: 7px 15px;
   font-family: inherit;
+  margin: 0 5px 5px 0;
 }
 
 .sobre h1 {
@@ -262,14 +279,6 @@ img {
   font-size: 45px;
   font-weight: 700;
   text-transform: capitalize;
-}
-
-.sobre h2 {
-  font-size: 20px;
-  text-transform: capitalize;
-  color: #183153;
-  font-weight: 300;
-  margin: -5px 0 20px;
 }
 
 .sobre a {
@@ -283,30 +292,157 @@ img {
 
 .home-img .img-box {
   max-width: 350px;
-  border-radius: 50%;
+  border-top-right-radius: 10%;
+  border-bottom-left-radius: 10%;
   border: 8px solid #272;
   margin: auto;
 }
 
 .home-img .img-box img {
   width: 100%;
-  border-radius: 50%;
+  border-top-right-radius: 10%;
+  border-bottom-left-radius: 10%;
   border: 3px solid #f2f2f2;
 }
 
 /* Aprendizados */
 
 .secao-paddin {
-  padding: 40px 0;
+  padding: 80px 0;
 }
 
 /* Secao Título */
 .secao-titulo {
   padding: 0 15px;
   width: 100%;
+  text-align: center;
+  margin-bottom: 30px;
 }
 
 .secao-titulo h2 {
-  font-size: 30px;
+  font-size: 40px;
   text-transform: capitalize;
+}
+
+/* Aprendizados */
+
+.secao-aprendizados {
+  padding-bottom: 50px;
+}
+
+/* aprendizados-modulos */
+.aprendizados-modulos {
+  width: calc((100% / 2) - 30px);
+  margin: 0 15px 30px;
+}
+
+.aprendizados-miniaturas {
+  padding: 10px;
+  border: 1px solid #7d7d7d;
+  border-top-left-radius: 10%;
+  border-bottom-right-radius: 5%;
+}
+
+.aprendizados-miniaturas img {
+  width: 100%;
+}
+
+.aprendizados-modulos h3 {
+  font-size: 20px;
+  text-transform: capitalize;
+  margin: 15px 0;
+}
+
+.aprendizados-detalhes {
+  display: none;
+}
+
+/* Aprendizados Popup*/
+.aprendizados-popup {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 100;
+  visibility: hidden;
+}
+
+.aprendizados-popup.open {
+  visibility: visible;
+  overflow-y: auto;
+}
+
+.pp-interno {
+  height: 100vh;
+  padding: 40px 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pp-conteudo {
+  background-color: #ededed;
+  padding: 30px;
+  border-radius: 30px;
+  max-width: 800px;
+  width: 100%;
+  border: 1px solid #7d7d7d;
+  backdrop-filter: #272727;
+  opacity: 0;
+  transform: scale(0.9);
+}
+
+.aprendizados-popup.open .pp-conteudo {
+  opacity: 1;
+  transform: scale(1);
+  transition: all 0.5 ease;
+}
+
+.pp-header {
+  position: relative;
+}
+
+.pp-header .btn {
+  height: 40px;
+  width: 40px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: -40px;
+  top: -40px;
+  color: red;
+  /* border: none; */
+  /* background: none; */
+}
+
+.pp-miniaturas img{
+  border-radius: 0;
+}
+
+.pp-header h3 {
+  font-size: 25px;
+  text-transform: capitalize;
+  margin: 20px 0 15px;
+}
+
+.pp-body .detalhes {
+  margin-bottom: 20px;
+}
+
+.pp-body .informacoes-gerais li {
+  margin-bottom: 10px;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.pp-body .informacoes-gerais li span {
+  font-weight: 300;
+}
+
+.pp-body .informacoes-gerais li a {
+  font-weight: 500;
+  text-transform: lowercase;
 }
