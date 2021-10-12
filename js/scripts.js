@@ -1,9 +1,9 @@
 // Aprendizado Popup <---</
-addEventListener("click", (event) => {
-  if(event.target.classList.contains("btn-detalhes")) {
+document.addEventListener("click", (e) => {
+  if(e.target.classList.contains("btn-detalhes")) {
     toggleAprendizadosPopup();
     document.querySelector(".aprendizados-popup").scrollTo(0,0);
-    aprendizadosDetalhes(event.target.parentElement);
+    aprendizadosDetalhes(e.target.parentElement);
   }
 })
 
@@ -16,8 +16,8 @@ function toggleAprendizadosPopup() {
 document.querySelector(".pp-close").addEventListener("click", toggleAprendizadosPopup);
 
 // Próximo
-document.addEventListener("click", (event) => {
-  if(event.target.classList.contains("pp-interno")) {
+document.addEventListener("click", (e) => {
+  if(e.target.classList.contains("pp-interno")) {
     toggleAprendizadosPopup();
   }
 });

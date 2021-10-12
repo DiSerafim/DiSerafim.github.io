@@ -15,7 +15,7 @@ body {
   margin: 0;
 }
 
-body.esconder.scrolling {
+body.esconder-scrolling {
   overflow-y: hidden;
 }
 
@@ -305,10 +305,53 @@ img {
   border: 3px solid #f2f2f2;
 }
 
+/* Buttons */
+
+.btn {
+  background-color: #dcdbdb;
+  border: none;
+  border-radius: 30px;
+  display: inline-block;
+  line-height: 1;
+  padding: 10px 15px;
+  color: #d10121;
+  font-weight: 500;
+  text-transform: capitalize;
+  font-family: inherit;
+  font-size: 16px;
+  cursor: pointer;
+  user-select: none;
+  position: relative;
+  overflow: hidden;
+  vertical-align: middle;
+  transition: color 0.3s ease;
+}
+
+.btn::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 0;
+  background-color: #d10121;
+  z-index: -1;
+  transition: width 0.3s ease;
+}
+
+.btn:hover::before {
+  width: 100%;
+}
+
+.btn:hover {
+  color: #f2f2f2;
+  z-index: 100;
+}
+
 /* Aprendizados */
 
 .secao-paddin {
-  padding: 80px 0;
+  padding: 40px 0;
 }
 
 /* Secao Título */
@@ -316,12 +359,15 @@ img {
   padding: 0 15px;
   width: 100%;
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 
 .secao-titulo h2 {
+  border-bottom: 1px solid #e8dfec;
   font-size: 40px;
   text-transform: capitalize;
+  font-family: 'Rubik', sans-serif;
+  color: #183153;
 }
 
 /* Aprendizados */
@@ -330,9 +376,13 @@ img {
   padding-bottom: 50px;
 }
 
+.secao-aprendizados .fileira {
+  padding-top: 50px;
+}
+
 /* aprendizados-modulos */
 .aprendizados-modulos {
-  width: calc((100% / 2) - 30px);
+  width: calc((100% / 4) - 30px);
   margin: 0 15px 30px;
 }
 
@@ -387,7 +437,6 @@ img {
   border-radius: 30px;
   max-width: 800px;
   width: 100%;
-  border: 1px solid #7d7d7d;
   backdrop-filter: #272727;
   opacity: 0;
   transform: scale(0.9);
@@ -416,10 +465,14 @@ img {
   color: red;
   /* border: none; */
   /* background: none; */
+  border-radius: 50%;
 }
 
-.pp-miniaturas img{
-  border-radius: 0;
+.pp-miniaturas{
+  text-align: center;
+  background-color: #e8dfec;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
 }
 
 .pp-header h3 {
